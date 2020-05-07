@@ -1,0 +1,326 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #F4F4F4;
+    color: #42D321;
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #42D321;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+    font-size: 84px;
+}
+
+.button {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #42D321;
+    border: 3px solid #42D321;
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.button:hover a {
+    background: #42D321;
+    color: #F4F4F4;
+    transition: 0.3s;
+}
+
+
+
+
+.square{
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 25%;
+  margin: auto;
+  min-width: 25%;
+  border: 3px solid #42D321;
+  padding: 60px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h2{
+  font-size: 50px;
+  font-family: "arial";
+
+}
+
+h3{
+  font-size: 20px;
+  padding-bottom: 40px;
+    font-family: "arial";
+}
+
+h4{
+    font-size: 20px;
+    font-family: "arial";
+}
+
+.buttoninsquare {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttoninsquare a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #42D321;
+    border: 3px solid #42D321;
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.buttoninsquare:hover a {
+    background: #42D321;
+    color: #F4F4F4;
+    transition: 0.3s;
+}
+
+
+
+a{
+  color: #9B9B9B;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #9B9B9B;
+}
+
+a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #42D321;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+visibility: visible;
+transform: scaleX(1);
+}
+
+
+
+.homebox{
+  position: relative;
+  z-index: 999;
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate; /*Safari 4.0-8.0, the animation syntax slightly changed for each browser*/
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate{
+  0% {transform: rotateY(0deg);}
+  50% {transform: rotateY(180deg);}
+  100% {transform: rotateY(360deg);}
+
+}
+
+.greenwork1{
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  right: 1%;
+  transform: rotate(20deg);
+}
+.greenwork2{
+  position: fixed;
+  z-index: 1;
+  transform: rotate(20deg);
+}
+.greenwork3{
+  position: fixed;
+  z-index: 1;
+  bottom: -10%;
+  left: 30%;
+  transform: rotate(-10deg);
+}
+.greenwork4{
+  position: fixed;
+  z-index: 1;
+}
+.greenwork5{
+  position: fixed;
+  z-index: 1;
+  position: fixed;
+  z-index: 1;
+  left: 80%;
+  top: 10%;
+  transform: rotate(-10deg);
+}
+.greenwork6{
+  position: fixed;
+  z-index: 1;
+  right: 20%;
+  top: 40%;
+  transform: rotate(-10deg);
+}
+
+
+
+.square2{
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 40%;
+  margin: auto;
+  min-width: 35%;
+  border: 3px solid #42D321;
+  padding: 60px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.subscribesquare {
+  position: relative;
+  top: 80%;
+  left: 13%;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+
+.subscribesquare a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #42D321;
+    border: 3px solid #42D321;
+    padding: 50px 20px;
+    margin: 5px;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.subscribesquare:hover a {
+    background: #42D321;
+    display: inline-block;
+    text-decoration: none;
+    color: #F4F4F4;
+    transition: 0.3s;
+}
+
+.divholder{
+  margin-top: 90px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #42D321;
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+}
+
+.formpage {
+  margin-bottom: 80px;
+
+}
+
+.square3{
+  position: fixed;
+  top: 13%;
+  left: 28%;
+  width: 20%;
+  margin: auto;
+  min-width: 35%;
+  border: 3px solid #42D321;
+  padding: 60px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.buttoninsquare2 {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttoninsquare2 a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #42D321;
+    border: 3px solid #42D321;
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.buttoninsquare2:hover a {
+    background: #42D321;
+    color: #F4F4F4;
+    transition: 0.3s;
+}
+
+
+.squareinv{
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 35%;
+  margin: auto;
+  min-width: 35%;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#homelogo{
+  z-index: 99999;
+  position: fixed;
+  left: 3%;
+  top: 5%;
+}
